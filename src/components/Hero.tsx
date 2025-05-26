@@ -17,11 +17,10 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-blue-200 to-purple-300 bg-clip-text text-transparent">
-              Transform Your Digital Presence
+              Fast <br/> Modern <br/> Websites
             </h1>
-            <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
-              We craft fast, modern sites that impress customers and fuel your growth. 
-              Get a professional online presence that delivers results.
+            <p className="text-xl md:text-xl text-slate-300 mb-8 leading-relaxed">
+              Create a blazingly fast, modern web presence that impresses customers and fuels growth.
             </p>
           </div>
           

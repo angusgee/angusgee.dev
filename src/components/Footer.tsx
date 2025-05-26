@@ -12,21 +12,17 @@ const Footer = () => {
               <span className="text-2xl font-bold">angusgee.dev</span>
             </div>
             <p className="text-slate-400 mb-6 max-w-md">
-              We craft fast, modern sites that impress customers and fuel your growth. 
+              We craft fast, modern sites that impress customers and fuel growth. 
               Professional web development services that deliver results.
             </p>
             <div className="space-y-2">
               <div className="flex items-center text-slate-400">
                 <Mail className="h-4 w-4 mr-2" />
-                <span>hello@angusgee.dev</span>
-              </div>
-              <div className="flex items-center text-slate-400">
-                <Phone className="h-4 w-4 mr-2" />
-                <span>+44 20 1234 5678</span>
+                <span>info@angusgee.dev</span>
               </div>
               <div className="flex items-center text-slate-400">
                 <MapPin className="h-4 w-4 mr-2" />
-                <span>London, United Kingdom</span>
+                <span>Valletta, Malta</span>
               </div>
             </div>
           </div>

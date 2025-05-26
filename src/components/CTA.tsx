@@ -26,14 +26,6 @@ const CTA = () => {
                 Book Discovery Call
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg rounded-lg"
-              >
-                <Phone className="mr-2 h-5 w-5" />
-                Call Now
-              </Button>
             </div>
             
             <div className="text-blue-200 text-sm">
