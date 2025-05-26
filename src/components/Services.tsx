@@ -70,7 +70,7 @@ const Services = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {services.map((service, index) => (
-            <Card key={index} className={`relative ${service.popular ? 'border-2 border-blue-500 shadow-xl scale-105' : 'border border-slate-200'} hover:shadow-lg transition-all duration-300`}>
+            <Card key={index} className={`relative h-full flex flex-col ${service.popular ? 'border-2 border-blue-500 shadow-xl scale-105' : 'border border-slate-200'} hover:shadow-lg transition-all duration-300`}>
               {service.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <span className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
@@ -95,8 +95,8 @@ const Services = () => {
                 </CardDescription>
               </CardHeader>
               
-              <CardContent>
-                <ul className="space-y-3 mb-8">
+              <CardContent className="flex-grow flex flex-col">
+                <ul className="space-y-3 mb-8 flex-grow">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start">
                       <Check className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
@@ -106,7 +106,7 @@ const Services = () => {
                 </ul>
                 
                 <Button 
-                  className={`w-full ${service.popular ? 'bg-blue-600 hover:bg-blue-700' : 'bg-slate-900 hover:bg-slate-800'} text-white`}
+                  className={`w-full mt-auto ${service.popular ? 'bg-blue-600 hover:bg-blue-700' : 'bg-slate-900 hover:bg-slate-800'} text-white`}
                 >
                   Get Started
                 </Button>
