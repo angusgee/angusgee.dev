@@ -6,7 +6,7 @@ import { Check, Code, Layers, Zap } from "lucide-react";
 const Services = () => {
   const services = [
     {
-      title: "Basic - Starter Landing Page",
+      title: "Basic Web Presence",
       price: "£480",
       description: "Need a compelling website, fast? Our Starter Landing Page launches your business online with a polished, high-impact design, quickly and affordably.",
       features: [
@@ -21,7 +21,7 @@ const Services = () => {
       popular: false
     },
     {
-      title: "Standard - Business Brochure Site",
+      title: "Standard Business Site",
       price: "£1,140",
       description: "Ready for significant growth? Our Business Brochure Site provides a comprehensive platform to showcase your services, attract more customers, and elevate your brand.",
       features: [
@@ -37,7 +37,7 @@ const Services = () => {
     },
     {
       title: "Bespoke Web App",
-      price: "Contact for quote",
+      price: "£ Contact",
       description: "Have a unique vision or complex operational need? We engineer powerful, secure custom web applications, precision-built for your business.",
       features: [
         "Streamline workflows with custom dashboards, secure logins, and robust databases",
