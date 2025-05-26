@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-blue-200 to-purple-300 bg-clip-text text-transparent">
+            <h1 className="text-6xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-white via-blue-200 to-purple-300 bg-clip-text text-transparent">
               Fast <br/> Modern <br/> Websites
             </h1>
             <p className="text-xl md:text-xl text-slate-300 mb-8 leading-relaxed">
@@ -37,9 +37,9 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
             <div className="text-center group h-full">
               <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700 group-hover:border-blue-500/50 transition-all duration-300 h-full flex flex-col backdrop-blur-sm">
-                <Shield className="h-8 w-8 text-blue-400 mx-auto mb-4" />
-                <h3 className="text-lg font-semibold mb-2">Secure & Fast</h3>
-                <p className="text-slate-400 flex-grow">SSL security, DDOS protection, and lightning-fast performance included</p>
+              <Rocket className="h-8 w-8 text-blue-400 mx-auto mb-4" />
+                <h3 className="text-lg font-semibold mb-2">Quick Launch</h3>
+                <p className="text-slate-400 flex-grow">From concept to live site in days, not months</p>
               </div>
             </div>
             
@@ -53,9 +53,9 @@ const Hero = () => {
             
             <div className="text-center group h-full">
               <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700 group-hover:border-blue-500/50 transition-all duration-300 h-full flex flex-col backdrop-blur-sm">
-                <Rocket className="h-8 w-8 text-blue-400 mx-auto mb-4" />
-                <h3 className="text-lg font-semibold mb-2">Quick Launch</h3>
-                <p className="text-slate-400 flex-grow">From concept to live site in days, not months</p>
+              <Shield className="h-8 w-8 text-blue-400 mx-auto mb-4" />
+                <h3 className="text-lg font-semibold mb-2">Secure & Fast</h3>
+                <p className="text-slate-400 flex-grow">SSL security, DDOS protection, and lightning-fast performance included</p>
               </div>
             </div>
           </div>
