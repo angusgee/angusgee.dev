@@ -27,7 +27,7 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <Button 
               variant="outline" 
-              className="hidden md:flex border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+              className="hidden md:flex border-blue-600 text-slate-900 font-bold hover:bg-slate-800 hover:text-blue-400"
             >
               Get Started
             </Button>

@@ -8,7 +8,6 @@ const Services = () => {
     {
       title: "Basic - Starter Landing Page",
       price: "£480",
-      period: "one-off",
       description: "Need a compelling website, fast? Our Starter Landing Page launches your business online with a polished, high-impact design, quickly and affordably.",
       features: [
         "Build instant credibility with a sleek, professional design",
@@ -24,7 +23,6 @@ const Services = () => {
     {
       title: "Standard - Business Brochure Site",
       price: "£1,140",
-      period: "one-off",
       description: "Ready for significant growth? Our Business Brochure Site provides a comprehensive platform to showcase your services, attract more customers, and elevate your brand.",
       features: [
         "Clearly present your offerings with up to 5 expertly crafted pages",
@@ -39,8 +37,7 @@ const Services = () => {
     },
     {
       title: "Bespoke Web App",
-      price: "Starting at £4,200",
-      period: "quoted per spec",
+      price: "Contact for quote",
       description: "Have a unique vision or complex operational need? We engineer powerful, secure custom web applications, precision-built for your business.",
       features: [
         "Streamline workflows with custom dashboards, secure logins, and robust databases",
@@ -88,7 +85,6 @@ const Services = () => {
                 </CardTitle>
                 <div className="mb-4">
                   <span className="text-3xl font-bold text-blue-600">{service.price}</span>
-                  <span className="text-slate-500 ml-2">{service.period}</span>
                 </div>
                 <CardDescription className="text-slate-600 leading-relaxed">
                   {service.description}
@@ -106,7 +102,7 @@ const Services = () => {
                 </ul>
                 
                 <Button 
-                  className={`w-full mt-auto ${service.popular ? 'bg-blue-600 hover:bg-blue-700' : 'bg-slate-900 hover:bg-slate-800'} text-white`}
+                  className={`w-full mt-auto font-bold ${service.popular ? 'bg-blue-600 hover:bg-blue-700' : 'bg-slate-900 hover:bg-slate-800'} text-white`}
                 >
                   Get Started
                 </Button>
