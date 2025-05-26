@@ -56,12 +56,11 @@ const Hosting = () => {
     <section id="hosting" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            MANAGED HOSTING & CARE
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-12">
+            Deploy & Manage
           </h2>
           <p className="text-xl text-slate-600 max-w-4xl mx-auto">
-            Our Managed Hosting & Care plans ensure your site is fast, secure, and always performing, 
-            backed by expert support. So you can focus on your business.
+            Our Managed Hosting & Care plans ensure your site is fast, secure, and backed by expert support. So you can focus on your business.
           </p>
         </div>
         
