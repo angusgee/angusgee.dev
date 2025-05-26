@@ -102,7 +102,7 @@ const Hosting = () => {
                 </ul>
                 
                 <Button 
-                  className={`w-full mt-auto ${plan.popular ? 'bg-blue-600 hover:bg-blue-700' : 'bg-slate-900 hover:bg-slate-800'} text-white`}
+                  className={`w-full mt-auto font-bold ${plan.popular ? 'bg-blue-600 hover:bg-blue-700' : 'bg-slate-900 hover:bg-slate-800'} text-white`}
                 >
                   Choose Plan
                 </Button>
