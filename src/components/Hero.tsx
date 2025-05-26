@@ -25,19 +25,19 @@ const Hero = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fade-in-delay">
-            <Button 
+            {/* <Button 
               size="lg" 
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-lg transform hover:scale-105 transition-all duration-200"
+              className="bg-slate-800 hover:bg-white text-blue-400 hover:text-slate-900 px-8 py-4 text-lg font-semibold rounded-lg transform hover:scale-105 transition-all duration-200"
             >
               <Rocket className="mr-2 h-5 w-5" />
               Start Your Project
-            </Button>
+            </Button> */}
             <Button 
               variant="outline" 
               size="lg"
               className="border-slate-600 text-slate-900 font-bold hover:bg-slate-800 hover:text-blue-400 px-8 py-4 text-lg rounded-lg"
             >
-              View Our Work
+              Start Your Project
             </Button>
           </div>
           

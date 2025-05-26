@@ -87,7 +87,7 @@ const Hosting = () => {
                   <span className="text-3xl font-bold text-blue-600">{plan.price}</span>
                   <span className="text-slate-500 ml-2">{plan.period}</span>
                 </div>
-                <CardDescription className="text-slate-600 leading-relaxed">
+                <CardDescription className="text-slate-600 text-left leading-relaxed">
                   {plan.description}
                 </CardDescription>
               </CardHeader>

@@ -12,7 +12,7 @@ const Footer = () => {
               <span className="text-2xl font-bold">angusgee.dev</span>
             </div>
             <p className="text-slate-400 mb-6 max-w-md">
-              We craft fast, modern sites that impress customers and fuel growth. 
+              Fast, modern sites that impress customers and fuel growth. 
               Professional web development services that deliver results.
             </p>
             <div className="space-y-2">

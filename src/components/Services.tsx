@@ -86,7 +86,7 @@ const Services = () => {
                 <div className="mb-4">
                   <span className="text-3xl font-bold text-blue-600">{service.price}</span>
                 </div>
-                <CardDescription className="text-slate-600 leading-relaxed">
+                <CardDescription className="text-slate-600 text-left leading-relaxed">
                   {service.description}
                 </CardDescription>
               </CardHeader>
