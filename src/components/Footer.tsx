@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <Code className="h-8 w-8 text-blue-400" />
-              <span className="text-2xl font-bold">WebCraft Studio</span>
+              <span className="text-2xl font-bold">angusgee.dev</span>
             </div>
             <p className="text-slate-400 mb-6 max-w-md">
               We craft fast, modern sites that impress customers and fuel your growth. 
@@ -18,7 +18,7 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center text-slate-400">
                 <Mail className="h-4 w-4 mr-2" />
-                <span>hello@webcraftstudio.com</span>
+                <span>hello@angusgee.dev</span>
               </div>
               <div className="flex items-center text-slate-400">
                 <Phone className="h-4 w-4 mr-2" />
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-slate-800 mt-12 pt-8 text-center text-slate-400">
-          <p>&copy; 2024 WebCraft Studio. All rights reserved.</p>
+          <p>&copy; 2024 angusgee.dev. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -9,7 +9,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Code className="h-8 w-8 text-blue-400" />
-            <span className="text-xl font-bold text-white">WebCraft Studio</span>
+            <span className="text-xl font-bold text-white">angusgee.dev</span>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
@@ -27,7 +27,7 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <Button 
               variant="outline" 
-              className="hidden md:flex border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-slate-900"
+              className="hidden md:flex border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
             >
               Get Started
             </Button>
