@@ -38,27 +38,27 @@ const Hero = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
-            <div className="text-center group">
-              <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700 group-hover:border-blue-500/50 transition-all duration-300">
+            <div className="text-center group h-full">
+              <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700 group-hover:border-blue-500/50 transition-all duration-300 h-full flex flex-col">
                 <Shield className="h-8 w-8 text-blue-400 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold mb-2">Secure & Fast</h3>
-                <p className="text-slate-400">SSL security, DDOS protection, and lightning-fast performance included</p>
+                <p className="text-slate-400 flex-grow">SSL security, DDOS protection, and lightning-fast performance included</p>
               </div>
             </div>
             
-            <div className="text-center group">
-              <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700 group-hover:border-blue-500/50 transition-all duration-300">
+            <div className="text-center group h-full">
+              <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700 group-hover:border-blue-500/50 transition-all duration-300 h-full flex flex-col">
                 <Star className="h-8 w-8 text-blue-400 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold mb-2">Premium Quality</h3>
-                <p className="text-slate-400">Professional designs that build credibility and convert visitors</p>
+                <p className="text-slate-400 flex-grow">Professional designs that build credibility and convert visitors</p>
               </div>
             </div>
             
-            <div className="text-center group">
-              <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700 group-hover:border-blue-500/50 transition-all duration-300">
+            <div className="text-center group h-full">
+              <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700 group-hover:border-blue-500/50 transition-all duration-300 h-full flex flex-col">
                 <Rocket className="h-8 w-8 text-blue-400 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold mb-2">Quick Launch</h3>
-                <p className="text-slate-400">From concept to live site in days, not months</p>
+                <p className="text-slate-400 flex-grow">From concept to live site in days, not months</p>
               </div>
             </div>
           </div>
