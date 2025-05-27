@@ -67,48 +67,85 @@ const Services = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {services.map((service, index) => (
-            <Card key={index} className={`relative h-full flex flex-col ${service.popular ? 'border-2 border-blue-500 shadow-xl scale-105' : 'border border-slate-200'} hover:shadow-lg transition-all duration-300`}>
-              {service.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                    Most Popular
-                  </span>
-                </div>
-              )}
-              
-              <CardHeader className="text-center pb-4">
-                <div className="mx-auto mb-4 p-3 bg-blue-100 rounded-full w-fit">
-                  <service.icon className="h-8 w-8 text-blue-600" />
-                </div>
-                <CardTitle className="text-2xl font-bold text-slate-900 mb-2">
-                  {service.title}
-                </CardTitle>
-                <div className="mb-4">
-                  <span className="text-3xl font-bold text-blue-600">{service.price}</span>
-                </div>
-                <CardDescription className="text-slate-600 text-left leading-relaxed">
-                  {service.description}
-                </CardDescription>
-              </CardHeader>
-              
-              <CardContent className="flex-grow flex flex-col">
-                <ul className="space-y-3 mb-8 flex-grow">
-                  {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-start">
-                      <Check className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-slate-700">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                
-                <Button 
-                  className={`w-full mt-auto font-bold ${service.popular ? 'bg-blue-600 hover:bg-blue-700' : 'bg-slate-900 hover:bg-slate-800'} text-white`}
-                >
-                  Get Started
-                </Button>
-              </CardContent>
-            </Card>
+  service.popular ? (
+    <div 
+      key={index} 
+      className="p-0.5 bg-gradient-to-br from-purple-500 via-fuchsia-500 to-blue-500 shadow-xl scale-105 rounded-lg"
+    >
+      <Card className="relative h-full flex flex-col bg-card rounded-lg">
+        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
+          <span className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
+            Most Popular
+          </span>
+        </div>
+        <CardHeader className="text-center pb-4 pt-8"> {/* Added pt-8 for spacing with popular tag */}
+          <div className="mx-auto mb-4 p-3 bg-blue-100 rounded-full w-fit">
+            <service.icon className="h-8 w-8 text-blue-600" />
+          </div>
+          <CardTitle className="text-2xl font-bold text-slate-900 mb-2">
+            {service.title}
+          </CardTitle>
+          <div className="mb-4">
+            <span className="text-3xl font-bold text-blue-600">{service.price}</span>
+          </div>
+          <CardDescription className="text-slate-600 text-left leading-relaxed">
+            {service.description}
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="flex-grow flex flex-col">
+          <ul className="space-y-3 mb-8 flex-grow">
+            {service.features.map((feature, featureIndex) => (
+              <li key={featureIndex} className="flex items-start">
+                <Check className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                <span className="text-slate-700">{feature}</span>
+              </li>
+            ))}
+          </ul>
+          <Button 
+            className="w-full mt-auto font-bold bg-blue-600 hover:bg-blue-700 text-white" /* Popular button style */
+          >
+            Get Started
+          </Button>
+        </CardContent>
+      </Card>
+    </div>
+  ) : (
+    <Card 
+      key={index} 
+      className="relative h-full flex flex-col border border-slate-200 hover:shadow-lg transition-all duration-300 rounded-lg bg-card"
+    >
+      <CardHeader className="text-center pb-4">
+        <div className="mx-auto mb-4 p-3 bg-blue-100 rounded-full w-fit">
+          <service.icon className="h-8 w-8 text-blue-600" />
+        </div>
+        <CardTitle className="text-2xl font-bold text-slate-900 mb-2">
+          {service.title}
+        </CardTitle>
+        <div className="mb-4">
+          <span className="text-3xl font-bold text-blue-600">{service.price}</span>
+        </div>
+        <CardDescription className="text-slate-600 text-left leading-relaxed">
+          {service.description}
+        </CardDescription>
+      </CardHeader>
+      <CardContent className="flex-grow flex flex-col">
+        <ul className="space-y-3 mb-8 flex-grow">
+          {service.features.map((feature, featureIndex) => (
+            <li key={featureIndex} className="flex items-start">
+              <Check className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+              <span className="text-slate-700">{feature}</span>
+            </li>
           ))}
+        </ul>
+        <Button 
+          className="w-full mt-auto font-bold bg-slate-900 hover:bg-slate-800 text-white" /* Non-popular button style */
+        >
+          Get Started
+        </Button>
+      </CardContent>
+    </Card>
+  )
+))}
         </div>
       </div>
     </section>
