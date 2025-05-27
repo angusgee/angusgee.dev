@@ -26,11 +26,12 @@ const Hero = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fade-in-delay">
             <Button 
+              asChild
               variant="outline" 
               size="lg"
               className="border-slate-600 text-slate-900 font-bold hover:bg-slate-800 hover:text-blue-400 px-8 py-4 text-lg rounded-lg"
             >
-              Start Your Project
+              <a href="#contact">Start Your Project</a>
             </Button>
           </div>
           
