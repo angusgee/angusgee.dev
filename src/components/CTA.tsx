@@ -5,11 +5,11 @@ import { ArrowRight, Calendar, Phone } from "lucide-react";
 
 const CTA = () => {
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+    <section id="contact" className="py-20 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
       <div className="container mx-auto px-6">
         <Card className="max-w-4xl mx-auto bg-white/10 backdrop-blur-sm border-white/20">
           <CardContent className="p-12 text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-blue-200 to-purple-300 bg-clip-text text-transparent">
               Ready to Transform Your Online Presence?
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
