@@ -53,7 +53,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-slate-50">
+    <section id="services" className="pt-28 bg-slate-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
@@ -146,8 +146,10 @@ const Services = () => {
     </Card>
   )
 ))}
-        </div>
-      </div>
+        </div> {/* End of grid */}
+      </div> {/* End of container */}
+
+      <div className="mt-44 h-1 bg-gradient-to-br from-purple-500 via-fuchsia-500 to-blue-500"></div>
     </section>
   );
 };
