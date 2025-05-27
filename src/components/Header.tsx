@@ -58,10 +58,11 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <div className="flex items-center space-x-4">
             <Button 
+              asChild
               variant="outline" 
               className="hidden md:flex border-blue-600 text-slate-900 font-bold hover:bg-slate-800 hover:text-blue-400"
             >
-              Get Started
+              <a href="#contact">Get Started</a>
             </Button>
             <Button ref={buttonRef} size="sm" className="md:hidden" onClick={toggleMobileMenu}>
               {isMobileMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
@@ -84,11 +85,12 @@ const Header = () => {
               Contact
             </a>
             <Button 
+              asChild
               variant="outline" 
               className="w-full border-blue-600 text-slate-900 font-bold hover:bg-slate-800 hover:text-blue-400"
-              onClick={() => { /* Add navigation or action */ toggleMobileMenu(); }}
+              onClick={toggleMobileMenu}
             >
-              Get Started
+              <a href="#contact">Get Started</a>
             </Button>
           </div>
         </nav>
