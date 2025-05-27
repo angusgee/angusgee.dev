@@ -78,7 +78,7 @@ const Services = () => {
             Most Popular
           </span>
         </div>
-        <CardHeader className="text-center pb-4 pt-8"> {/* Added pt-8 for spacing with popular tag */}
+        <CardHeader className="text-center pb-4 pt-8"> 
           <div className="mx-auto mb-4 p-3 bg-blue-100 rounded-full w-fit">
             <service.icon className="h-8 w-8 text-blue-600" />
           </div>
@@ -102,7 +102,7 @@ const Services = () => {
             ))}
           </ul>
           <Button 
-            className="w-full mt-auto font-bold bg-blue-600 hover:bg-blue-700 text-white" /* Popular button style */
+            className="w-full mt-auto font-bold bg-blue-600 hover:bg-blue-700 text-white"
           >
             Get Started
           </Button>
@@ -138,7 +138,7 @@ const Services = () => {
           ))}
         </ul>
         <Button 
-          className="w-full mt-auto font-bold bg-slate-900 hover:bg-slate-800 text-white" /* Non-popular button style */
+          className="w-full mt-auto font-bold bg-slate-900 hover:bg-slate-800 text-white"
         >
           Get Started
         </Button>
