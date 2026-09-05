@@ -42,9 +42,15 @@ body {
 main { flex: 1 0 auto; }
 
 .container {
-  max-width: 68rem;
+  max-width: 74rem;
   margin-inline: auto;
   padding-inline: 1.5rem;
+}
+
+/* The header and hero breathe wider than the reading sections */
+.header-inner,
+.hero .container {
+  max-width: 84rem;
 }
 
 h1, h2, h3 {
@@ -179,7 +185,7 @@ a { color: var(--accent); }
 /* Hero */
 
 .hero {
-  padding: 6rem 0 5rem;
+  padding: 2.5rem 0 3rem;
   border-bottom: 1px solid var(--rule);
 }
 
@@ -187,7 +193,14 @@ a { color: var(--accent); }
   display: grid;
   grid-template-columns: 7fr 5fr;
   gap: 4rem;
-  align-items: center;
+  align-items: start;
+}
+
+@media (min-width: 56rem) {
+  .hero-copy {
+    justify-self: center;
+    align-self: center;
+  }
 }
 
 .hero h1 {
@@ -210,24 +223,49 @@ a { color: var(--accent); }
   margin-top: 2.5rem;
 }
 
-/* Hero proof panel */
+/* Hero visual: duotone Gardjola photo with the proof card floating over it */
 
-.proof-row + .proof-row { margin-top: 1.75rem; }
+.hero-visual {
+  position: relative;
+  margin-right: 6rem;
+}
+
+.hero-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 11rem 11rem 6px 6px;
+}
+
+.hero-proof {
+  position: absolute;
+  left: -7rem;
+  bottom: 2.5rem;
+  width: min(20rem, 92%);
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 14px 36px rgba(14, 27, 51, 0.14);
+}
+
+.proof-row + .proof-row { margin-top: 1.25rem; }
 
 .proof-label {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   gap: 1rem;
-  font-size: 1rem;
+  font-size: 0.9375rem;
   color: var(--ink-soft);
   margin-bottom: 0.6rem;
+  white-space: nowrap;
 }
 
 .proof-label span {
   color: var(--ink);
   font-weight: 600;
-  font-size: 1.1875rem;
+  font-size: 1.0625rem;
 }
 
 .proof-bar {
@@ -236,7 +274,7 @@ a { color: var(--accent); }
 }
 
 .proof-bar-this {
-  width: 4%;
+  width: 6.5%;
   min-width: 0.75rem;
   background: var(--accent);
 }
@@ -247,7 +285,7 @@ a { color: var(--accent); }
 }
 
 .proof-note {
-  margin-top: 1.75rem;
+  margin-top: 1.25rem;
   font-size: 0.9375rem;
   color: var(--ink-soft);
   max-width: 24rem;
@@ -267,7 +305,7 @@ a { color: var(--accent); }
 .hero h1 { animation: rise 0.6s ease-out both; }
 .hero .lede { animation: rise 0.6s ease-out 0.12s both; }
 .hero .hero-actions { animation: rise 0.6s ease-out 0.24s both; }
-.hero-proof { animation: rise 0.6s ease-out 0.36s both; }
+.hero-visual { animation: rise 0.6s ease-out 0.36s both; }
 .proof-bar-this { animation: grow 0.9s cubic-bezier(0.2, 0.7, 0.3, 1) 0.55s both; }
 .proof-bar-avg { animation: grow 0.9s cubic-bezier(0.2, 0.7, 0.3, 1) 0.65s both; }
 
@@ -721,9 +759,21 @@ a { color: var(--accent); }
 
 /* Responsive */
 
+@media (max-width: 76rem) {
+  .hero-proof { left: -4rem; }
+}
+
 @media (max-width: 56rem) {
   .hero-grid { grid-template-columns: 1fr; gap: 3rem; }
-  .hero-proof { max-width: 28rem; }
+  .hero-visual { max-width: 28rem; }
+  .site-nav { display: none; }
+  .hero-proof {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    width: min(22rem, 88%);
+    margin: -4.5rem 0 0 auto;
+  }
   .tiers { grid-template-columns: 1fr; max-width: 28rem; margin-inline: auto; }
   .props-grid { grid-template-columns: 1fr; gap: 2rem; }
   .work-grid { grid-template-columns: 1fr; }

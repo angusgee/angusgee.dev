@@ -6,3 +6,6 @@ lighthouse/
 # Local secrets and wrangler state
 .dev.vars
 .wrangler/
+
+# Raw source photos (originals stay out of the public repo)
+assets-raw/
