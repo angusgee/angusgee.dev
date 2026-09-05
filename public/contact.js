@@ -112,6 +112,10 @@
       .then(function (result) {
         if (result.response.ok && result.body.ok) {
           document.getElementById("success-name").textContent = data.name || "";
+          var title = document.querySelector(".contact-title");
+          if (title) title.textContent = "Brief received.";
+          var intro = document.querySelector(".contact-page .section-intro");
+          if (intro) intro.textContent = "Here's what happens next.";
           form.hidden = true;
           document.getElementById("form-success").hidden = false;
         } else {
