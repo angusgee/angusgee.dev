@@ -5,6 +5,7 @@
   var KEY = "currency";
 
   function apply(code) {
+    window.__currency = code;
     document.querySelectorAll("[data-usd]").forEach(function (el) {
       el.textContent = el.dataset[code.toLowerCase()] || el.dataset.usd;
     });

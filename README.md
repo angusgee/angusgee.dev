@@ -19,7 +19,7 @@ Client work gets the same treatment. If you've arrived here from a proposal: yes
 
 ## Run it locally
 
-Clone the repo and open `index.html` in a browser. That's it.
+Clone the repo and open `public/index.html` in a browser, or run `npx wrangler dev` for the full site plus the contact form API.
 
 ## Contact
 

@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Start a project · angusgee.dev</title>
+  <meta name="description" content="Tell me about your project in about two minutes: what you're building, timing and budget. I reply to every brief within one business day.">
+  <link rel="canonical" href="https://angusgee.dev/contact">
+  <meta property="og:title" content="Start a project · angusgee.dev">
+  <meta property="og:description" content="Tell me about your project in about two minutes. I reply to every brief within one business day.">
+  <meta property="og:url" content="https://angusgee.dev/contact">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="contact.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="/">angusgee<span>.dev</span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/#services">Design &amp; build</a>
+        <a href="/#care">Care plans</a>
+        <a href="/#work">Work</a>
+        <a href="/#about">About</a>
+      </nav>
+      <a class="button button-small" href="/contact" aria-current="page">Start a project</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section section-wash contact-page">
+      <div class="container">
+        <h1 class="contact-title">Tell me about your project</h1>
+        <p class="section-intro">Four quick steps, about two minutes. The more you can tell me, the better my first reply will be.</p>
+
+        <div class="form-card">
+          <form id="brief" novalidate>
+
+            <div class="progress-head">
+              <p class="progress-label" aria-live="polite">Step <span id="step-now">1</span> of 4</p>
+              <div class="progress" aria-hidden="true"><div class="progress-fill" id="progress-fill"></div></div>
+            </div>
+
+            <fieldset class="step" data-step="1">
+              <legend>What are we building?</legend>
+              <div class="choices">
+                <label class="choice"><input type="radio" name="projectType" value="new-site" required>
+                  <strong>New website</strong><span>I don't have a site, or I'm starting fresh</span></label>
+                <label class="choice"><input type="radio" name="projectType" value="redesign">
+                  <strong>Redesign</strong><span>I have a site that needs to work harder</span></label>
+                <label class="choice"><input type="radio" name="projectType" value="web-app">
+                  <strong>Web app or online shop</strong><span>Ordering, bookings, logins, dashboards</span></label>
+                <label class="choice"><input type="radio" name="projectType" value="ai">
+                  <strong>AI integration or automation</strong><span>Put AI to work in the business</span></label>
+                <label class="choice"><input type="radio" name="projectType" value="not-sure">
+                  <strong>Not sure yet</strong><span>I'll describe it and you tell me</span></label>
+              </div>
+              <p class="field-error" hidden>Choose the option closest to what you need.</p>
+            </fieldset>
+
+            <fieldset class="step" data-step="2" hidden>
+              <legend>A little more detail</legend>
+
+              <div class="branch" data-branch="new-site" hidden>
+                <div class="field">
+                  <p class="field-label">How much of a site do you need?</p>
+                  <div class="choices choices-row">
+                    <label class="choice"><input type="radio" name="siteSize" value="A single page"><strong>Single page</strong></label>
+                    <label class="choice"><input type="radio" name="siteSize" value="Two to five pages"><strong>2–5 pages</strong></label>
+                    <label class="choice"><input type="radio" name="siteSize" value="More than five pages"><strong>More than 5</strong></label>
+                    <label class="choice"><input type="radio" name="siteSize" value="Not sure"><strong>Not sure</strong></label>
+                  </div>
+                </div>
+                <div class="field">
+                  <p class="field-label">Do you have branding: logo, colours?</p>
+                  <div class="choices choices-row">
+                    <label class="choice"><input type="radio" name="branding" value="Yes"><strong>Yes</strong></label>
+                    <label class="choice"><input type="radio" name="branding" value="Some of it"><strong>Some of it</strong></label>
+                    <label class="choice"><input type="radio" name="branding" value="Starting from zero"><strong>Starting from zero</strong></label>
+                  </div>
+                </div>
+                <div class="field">
+                  <p class="field-label">Is your text and imagery ready?</p>
+                  <div class="choices choices-row">
+                    <label class="choice"><input type="radio" name="content" value="Ready"><strong>Ready</strong></label>
+                    <label class="choice"><input type="radio" name="content" value="Partly"><strong>Partly</strong></label>
+                    <label class="choice"><input type="radio" name="content" value="I'd like copywriting included"><strong>I'd like copywriting included</strong></label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="branch" data-branch="redesign" hidden>
+                <div class="field">
+                  <label class="field-label" for="currentUrl">Your current site address <em>(optional)</em></label>
+                  <input type="url" id="currentUrl" name="currentUrl" placeholder="https://">
+                </div>
+                <div class="field">
+                  <p class="field-label">What's the main problem?</p>
+                  <div class="choices">
+                    <label class="choice"><input type="radio" name="problem" value="Looks dated"><strong>Looks dated</strong></label>
+                    <label class="choice"><input type="radio" name="problem" value="Slow"><strong>Slow</strong></label>
+                    <label class="choice"><input type="radio" name="problem" value="Doesn't bring enquiries"><strong>Doesn't bring enquiries</strong></label>
+                    <label class="choice"><input type="radio" name="problem" value="Hard to update"><strong>Hard to update</strong></label>
+                    <label class="choice"><input type="radio" name="problem" value="Something else"><strong>Something else</strong></label>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="field-label" for="details-redesign">Anything you'd like to add? <em>(optional)</em></label>
+                  <textarea id="details-redesign" name="details" rows="3"></textarea>
+                </div>
+              </div>
+
+              <div class="branch" data-branch="web-app" hidden>
+                <div class="field">
+                  <p class="field-label">What should it do? Tick all that apply.</p>
+                  <div class="choices">
+                    <label class="choice"><input type="checkbox" name="features" value="Online shop or ordering"><strong>Online shop or ordering</strong></label>
+                    <label class="choice"><input type="checkbox" name="features" value="Bookings or appointments"><strong>Bookings or appointments</strong></label>
+                    <label class="choice"><input type="checkbox" name="features" value="Client login or dashboard"><strong>Client login or dashboard</strong></label>
+                    <label class="choice"><input type="checkbox" name="features" value="Payments"><strong>Payments</strong></label>
+                    <label class="choice"><input type="checkbox" name="features" value="Something else"><strong>Something else</strong></label>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="field-label" for="details-app">Tell me a little more <em>(optional)</em></label>
+                  <textarea id="details-app" name="details" rows="3"></textarea>
+                </div>
+              </div>
+
+              <div class="branch" data-branch="ai" hidden>
+                <div class="field">
+                  <p class="field-label">What would you like AI to handle? Tick all that apply.</p>
+                  <div class="choices">
+                    <label class="choice"><input type="checkbox" name="aiGoals" value="Answering customer questions"><strong>Answering customer questions</strong></label>
+                    <label class="choice"><input type="checkbox" name="aiGoals" value="Content or admin automation"><strong>Content or admin automation</strong></label>
+                    <label class="choice"><input type="checkbox" name="aiGoals" value="Working with your documents or data"><strong>Working with your documents or data</strong></label>
+                    <label class="choice"><input type="checkbox" name="aiGoals" value="Not sure, advise me"><strong>Not sure — advise me</strong></label>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="field-label" for="details-ai">Tell me a little more <em>(optional)</em></label>
+                  <textarea id="details-ai" name="details" rows="3"></textarea>
+                </div>
+              </div>
+
+              <div class="branch" data-branch="not-sure" hidden>
+                <div class="field">
+                  <label class="field-label" for="about">Tell me about your business and what you're hoping the web can do for it.</label>
+                  <textarea id="about" name="about" rows="5" required></textarea>
+                  <p class="field-error" hidden>A sentence or two is all I need to get started.</p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="step" data-step="3" hidden>
+              <legend>Timing and budget</legend>
+              <div class="field">
+                <p class="field-label">When would you like to start?</p>
+                <div class="choices choices-row">
+                  <label class="choice"><input type="radio" name="timeline" value="As soon as possible"><strong>As soon as possible</strong></label>
+                  <label class="choice"><input type="radio" name="timeline" value="Within a month"><strong>Within a month</strong></label>
+                  <label class="choice"><input type="radio" name="timeline" value="One to three months"><strong>1–3 months</strong></label>
+                  <label class="choice"><input type="radio" name="timeline" value="Just researching"><strong>Just researching</strong></label>
+                </div>
+              </div>
+              <div class="field">
+                <p class="field-label">Do you have a budget in mind?</p>
+                <div class="choices choices-row">
+                  <label class="choice"><input type="radio" name="budgetBand" value="band-under"><strong><span data-usd="Under $650" data-gbp="Under £480" data-eur="Under €560">Under $650</span></strong></label>
+                  <label class="choice"><input type="radio" name="budgetBand" value="band-starter"><strong><span data-usd="$650 – $1,500" data-gbp="£480 – £1,100" data-eur="€560 – €1,300">$650 – $1,500</span></strong></label>
+                  <label class="choice"><input type="radio" name="budgetBand" value="band-business"><strong><span data-usd="$1,500 – $3,000" data-gbp="£1,100 – £2,200" data-eur="€1,300 – €2,600">$1,500 – $3,000</span></strong></label>
+                  <label class="choice"><input type="radio" name="budgetBand" value="band-bespoke"><strong><span data-usd="$3,000 – $7,500" data-gbp="£2,200 – £5,500" data-eur="€2,600 – €6,500">$3,000 – $7,500</span></strong></label>
+                  <label class="choice"><input type="radio" name="budgetBand" value="band-larger"><strong><span data-usd="$7,500+" data-gbp="£5,500+" data-eur="€6,500+">$7,500+</span></strong></label>
+                  <label class="choice"><input type="radio" name="budgetBand" value="band-unsure"><strong>Not sure yet</strong></label>
+                </div>
+              </div>
+              <div class="field">
+                <p class="field-label">Interested in an ongoing care plan: hosting, maintenance, support?</p>
+                <div class="choices choices-row">
+                  <label class="choice"><input type="radio" name="carePlan" value="Yes"><strong>Yes</strong></label>
+                  <label class="choice"><input type="radio" name="carePlan" value="Maybe, tell me more"><strong>Maybe, tell me more</strong></label>
+                  <label class="choice"><input type="radio" name="carePlan" value="No"><strong>No</strong></label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="step" data-step="4" hidden>
+              <legend>Where should I reply?</legend>
+              <div class="field">
+                <label class="field-label" for="name">Your name</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+                <p class="field-error" hidden>I need a name to reply to.</p>
+              </div>
+              <div class="field">
+                <label class="field-label" for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+                <p class="field-error" hidden>That email doesn't look right.</p>
+              </div>
+              <div class="field-pair">
+                <div class="field">
+                  <label class="field-label" for="company">Company <em>(optional)</em></label>
+                  <input type="text" id="company" name="company" autocomplete="organization">
+                </div>
+                <div class="field">
+                  <label class="field-label" for="phone">Phone <em>(optional)</em></label>
+                  <input type="tel" id="phone" name="phone" autocomplete="tel">
+                </div>
+              </div>
+              <div class="field">
+                <label class="field-label" for="notes">Anything else I should know? <em>(optional)</em></label>
+                <textarea id="notes" name="notes" rows="3"></textarea>
+              </div>
+              <p class="hp-field" aria-hidden="true"><label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label></p>
+              <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA"></div>
+            </fieldset>
+
+            <div class="form-nav">
+              <button type="button" class="button button-outline" id="back" hidden>Back</button>
+              <button type="button" class="button" id="next">Continue</button>
+              <button type="submit" class="button" id="send" hidden>Send my brief</button>
+            </div>
+
+            <p class="form-fail" id="form-fail" role="alert" hidden>Something went wrong sending your brief. Please try again, or email me directly at <a href="mailto:info@angusgee.dev">info@angusgee.dev</a>.</p>
+          </form>
+
+          <div class="form-success" id="form-success" hidden>
+            <h2>Thanks, <span id="success-name"></span>.</h2>
+            <p>Your brief is in my inbox. I reply to every enquiry within one business day, so keep an eye out for an email from angusgee.dev.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Angus Girvan · Malta</p>
+      <nav aria-label="Footer">
+        <a href="https://github.com/angusgee">GitHub</a>
+        <a href="https://shark3y.io">Security research</a>
+        <a href="mailto:info@angusgee.dev">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

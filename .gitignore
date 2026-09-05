@@ -2,3 +2,7 @@ node_modules
 dist
 
 lighthouse/
+
+# Local secrets and wrangler state
+.dev.vars
+.wrangler/
