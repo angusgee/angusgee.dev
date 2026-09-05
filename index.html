@@ -1,31 +1,222 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>angusgee.dev</title>
-    <meta name="description" content="Fast Modern Websites" />
-    <meta name="author" content="angusgee" />
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>angusgee.dev · Fast, secure websites for small businesses</title>
+  <meta name="description" content="Custom-coded websites for small businesses, hosted on Cloudflare's global network and built by a security researcher. From £480, live within a week. Based in Malta, working worldwide.">
+  <link rel="canonical" href="https://angusgee.dev/">
+  <meta property="og:title" content="angusgee.dev · Fast, secure websites for small businesses">
+  <meta property="og:description" content="Custom-coded websites, hosted on Cloudflare's global network and built by a security researcher. From £480, live within a week.">
+  <meta property="og:url" content="https://angusgee.dev/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <meta property="og:title" content="angusgee.dev" />
-    <meta property="og:description" content="Fast Modern Websites" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="/">angusgee<span>.dev</span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#services">Design &amp; build</a>
+        <a href="#care">Care plans</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+      </nav>
+      <a class="button button-small" href="#contact">Start a project</a>
+    </div>
+  </header>
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="angusgee.dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <main>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-  </head>
+    <section class="hero">
+      <div class="container">
+        <p class="kicker">Web design &amp; development · Malta</p>
+        <h1>Your Website<br>Live in a Week</h1>
+        <p class="lede">Custom code, no templates, hosted on Cloudflare's global network and secured by someone who finds vulnerabilities for a living. From £480.</p>
+        <div class="hero-actions">
+          <a class="button" href="#contact">Tell me about your project</a>
+          <a class="link-arrow" href="#services">See services and pricing</a>
+        </div>
+      </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <section class="props">
+      <div class="container props-grid">
+        <div class="prop">
+          <h3>No page builders</h3>
+          <p>Your site is custom code, not a template. No themes, no plugins, nothing spare to slow it down.</p>
+        </div>
+        <div class="prop">
+          <h3>Under a second</h3>
+          <p>Your site is built to load in under a second on a mobile connection. Visitors stay, and Google notices.</p>
+        </div>
+        <div class="prop">
+          <h3>Security as standard</h3>
+          <p>I'm a security researcher with thirty-nine CVEs to my name. I build sites that leave an attacker nothing to work with.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <p class="section-number">01</p>
+        <h2>Design &amp; build</h2>
+        <p class="section-intro">Clear pricing, fixed scope, no surprises. Every site includes SSL, a web application firewall and DDoS protection.</p>
+
+        <div class="tiers">
+          <article class="tier">
+            <h3>Starter site</h3>
+            <p class="price">£480</p>
+            <p class="tier-desc">One polished page to get your business online, fast.</p>
+            <ul>
+              <li>A single landing page designed around your brand</li>
+              <li>Copywriting included</li>
+              <li>Mobile-first and built to load in under a second</li>
+              <li>On-page SEO essentials</li>
+              <li>Live in two to three days, with two revision rounds</li>
+            </ul>
+            <a class="button button-outline" href="#contact">Start with a Starter site</a>
+          </article>
+
+          <article class="tier tier-featured">
+            <p class="tier-tag">Most popular</p>
+            <h3>Business site</h3>
+            <p class="price">£1,140</p>
+            <p class="tier-desc">A full home for your business: services, story and proof.</p>
+            <ul>
+              <li>Up to five pages, each written and designed from scratch</li>
+              <li>An optional blog, so you turn up in more searches</li>
+              <li>Two rounds of review, plus a tidy-up after launch</li>
+              <li>Everything in the Starter site, on every page</li>
+              <li>Live in about a week</li>
+            </ul>
+            <a class="button" href="#contact">Start with a Business site</a>
+          </article>
+
+          <article class="tier">
+            <h3>Bespoke build</h3>
+            <p class="price">On request</p>
+            <p class="tier-desc">Web apps, online shops and AI integrations, built to your brief.</p>
+            <ul>
+              <li>Custom dashboards, secure logins and databases</li>
+              <li>Online ordering, bookings and tools for your clients</li>
+              <li>AI assistants and workflow automation where they earn their keep</li>
+              <li>Clear milestones and regular updates throughout</li>
+              <li>Full handover and training when we're done</li>
+            </ul>
+            <a class="button button-outline" href="#contact">Discuss a bespoke build</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="care" class="section section-alt">
+      <div class="container">
+        <p class="section-number">02</p>
+        <h2>Care plans</h2>
+        <p class="section-intro">Hosting, maintenance and a developer on call, so your site keeps earning while you run the business.</p>
+
+        <div class="tiers">
+          <article class="tier">
+            <h3>Care Basic</h3>
+            <p class="price">£60<span class="period"> / month</span></p>
+            <p class="tier-desc">A website that looks after itself.</p>
+            <ul>
+              <li>Fast hosting with SSL and a global CDN</li>
+              <li>Uptime monitoring around the clock and weekly backups</li>
+              <li>Up to thirty minutes of content updates each month</li>
+              <li>Next-business-day support</li>
+            </ul>
+            <a class="button button-outline" href="#contact">Choose Care Basic</a>
+          </article>
+
+          <article class="tier tier-featured">
+            <p class="tier-tag">Recommended</p>
+            <h3>Care Growth</h3>
+            <p class="price">£120<span class="period"> / month</span></p>
+            <p class="tier-desc">A site that gets better every month, not just stays up.</p>
+            <ul>
+              <li>Everything in Care Basic</li>
+              <li>Two hours of design and development time each month</li>
+              <li>A concise monthly performance and security report</li>
+              <li>Same-day support</li>
+            </ul>
+            <a class="button" href="#contact">Choose Care Growth</a>
+          </article>
+
+          <article class="tier">
+            <h3>Care Premium</h3>
+            <p class="price">£480<span class="period"> / month</span></p>
+            <p class="tier-desc">For businesses whose website is the business.</p>
+            <ul>
+              <li>Everything in Care Growth</li>
+              <li>Five hours of priority design and development each month</li>
+              <li>Daily backups and advanced attack protection</li>
+              <li>A quarterly strategy call with a clear action plan</li>
+              <li>Emergency response in under four hours</li>
+            </ul>
+            <a class="button button-outline" href="#contact">Choose Care Premium</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="container">
+        <p class="section-number">03</p>
+        <h2>Selected work</h2>
+        <p class="section-intro">Recent projects, with more launching soon.</p>
+
+        <div class="work-grid">
+          <article class="work-item">
+            <h3><a href="https://github.com/angusgee/angusgee.dev">This site</a></h3>
+            <p>Plain HTML and CSS, no JavaScript, no build step. View the source. You're already looking at the portfolio piece.</p>
+          </article>
+          <article class="work-item">
+            <h3><a href="https://shark3y.io">shark3y.io</a></h3>
+            <p>My security research and bug bounty blog, documenting thirty-nine CVEs found in WordPress plugins.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+      <div class="container about-inner">
+        <p class="section-number">04</p>
+        <h2>About</h2>
+        <p class="about-text">I'm Angus Girvan, a web developer and security researcher based in Malta. I've spent seven years in IT, and I bring the same discipline to building websites that I bring to breaking them: small, fast and nothing left open. If your website is going to represent your business, it should be built by someone who knows exactly how websites fail.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <p class="section-number">05</p>
+        <h2>Tell me about your project</h2>
+        <p class="section-intro">Email a few lines about your business and what you need. I reply to every enquiry within one business day.</p>
+        <a class="button button-large" href="mailto:info@angusgee.dev?subject=Website%20project">Email info@angusgee.dev</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Angus Girvan · Malta</p>
+      <nav aria-label="Footer">
+        <a href="https://github.com/angusgee">GitHub</a>
+        <a href="https://shark3y.io">Security research</a>
+        <a href="mailto:info@angusgee.dev">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
 </html>
