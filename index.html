@@ -16,7 +16,7 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
@@ -38,13 +38,25 @@
   <main>
 
     <section class="hero">
-      <div class="container">
-        <p class="kicker">Web design &amp; development · Malta</p>
-        <h1>Your Website<br>Live in a Week</h1>
-        <p class="lede">Custom code, no templates, hosted on Cloudflare's global network and secured by someone who hunts vulnerabilities for sport. From <span data-usd="$650" data-gbp="£480" data-eur="€560">$650</span>.</p>
-        <div class="hero-actions">
-          <a class="button" href="#contact">Tell me about your project</a>
-          <a class="link-arrow" href="#services">See services and pricing</a>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Your Website<br>Live in a Week</h1>
+          <p class="lede">Custom code, no templates, hosted on Cloudflare's global network and secured by someone who hunts vulnerabilities for sport. From <span data-usd="$650" data-gbp="£480" data-eur="€560">$650</span>.</p>
+          <div class="hero-actions">
+            <a class="button" href="#contact">Tell me about your project</a>
+            <a class="link-arrow" href="#services">See services and pricing</a>
+          </div>
+        </div>
+        <div class="hero-proof" aria-label="Page weight of this site compared with the average website">
+          <div class="proof-row">
+            <p class="proof-label">This site <span>about 100 KB</span></p>
+            <div class="proof-bar proof-bar-this"></div>
+          </div>
+          <div class="proof-row">
+            <p class="proof-label">The average website <span>about 2,500 KB</span></p>
+            <div class="proof-bar proof-bar-avg"></div>
+          </div>
+          <p class="proof-note">Served from Cloudflare's edge in well under a second. View the source: it's all there.</p>
         </div>
       </div>
     </section>
@@ -66,9 +78,8 @@
       </div>
     </section>
 
-    <section id="services" class="section">
+    <section id="services" class="section section-wash">
       <div class="container">
-        <p class="section-number">01</p>
         <h2>Design &amp; build</h2>
         <p class="section-intro">Clear pricing, fixed scope, no surprises. Every site includes SSL, a web application firewall and DDoS protection.</p>
         <div class="currency-toggle" role="group" aria-label="Currency">
@@ -124,9 +135,8 @@
       </div>
     </section>
 
-    <section id="care" class="section section-alt">
+    <section id="care" class="section">
       <div class="container">
-        <p class="section-number">02</p>
         <h2>Care plans</h2>
         <p class="section-intro">Hosting, maintenance and a developer on call, so your site keeps earning while you run the business.</p>
 
@@ -175,9 +185,8 @@
       </div>
     </section>
 
-    <section id="work" class="section">
+    <section id="work" class="section section-wash">
       <div class="container">
-        <p class="section-number">03</p>
         <h2>Selected work</h2>
         <p class="section-intro">Recent projects, with more launching soon.</p>
 
@@ -194,20 +203,18 @@
       </div>
     </section>
 
-    <section id="about" class="section section-alt">
+    <section id="about" class="section section-dark">
       <div class="container about-inner">
-        <p class="section-number">04</p>
         <h2>About</h2>
         <p class="about-text">I'm Angus Girvan, a web developer and security researcher based in Malta. I've spent seven years in enterprise IT, working out what a business actually needs before anything gets built, then making sure it gets delivered. Your website gets the same treatment: the right questions first, a proper build second, and security checked by someone who hunts vulnerabilities for sport.</p>
       </div>
     </section>
 
-    <section id="contact" class="section contact">
+    <section id="contact" class="section section-dark contact">
       <div class="container">
-        <p class="section-number">05</p>
         <h2>Tell me about your project</h2>
         <p class="section-intro">Email a few lines about your business and what you need. I reply to every enquiry within one business day.</p>
-        <a class="button button-large" href="mailto:info@angusgee.dev?subject=Website%20project">Email info@angusgee.dev</a>
+        <a class="button button-large button-gold" href="mailto:info@angusgee.dev?subject=Website%20project">Email info@angusgee.dev</a>
       </div>
     </section>
 
