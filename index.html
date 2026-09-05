@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>angusgee.dev · Fast, secure websites for small businesses</title>
-  <meta name="description" content="Custom-coded websites for small businesses, hosted on Cloudflare's global network and built by a security researcher. From £480, live within a week. Based in Malta, working worldwide.">
+  <meta name="description" content="Custom-coded websites for small businesses, hosted on Cloudflare's global network and built by a security researcher. From $650, live within a week. Based in Malta, working worldwide.">
   <link rel="canonical" href="https://angusgee.dev/">
   <meta property="og:title" content="angusgee.dev · Fast, secure websites for small businesses">
-  <meta property="og:description" content="Custom-coded websites, hosted on Cloudflare's global network and built by a security researcher. From £480, live within a week.">
+  <meta property="og:description" content="Custom-coded websites, hosted on Cloudflare's global network and built by a security researcher. From $650, live within a week.">
   <meta property="og:url" content="https://angusgee.dev/">
   <meta property="og:type" content="website">
   <link rel="icon" href="favicon.ico" sizes="48x48">
@@ -18,6 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -40,7 +41,7 @@
       <div class="container">
         <p class="kicker">Web design &amp; development · Malta</p>
         <h1>Your Website<br>Live in a Week</h1>
-        <p class="lede">Custom code, no templates, hosted on Cloudflare's global network and secured by someone who finds vulnerabilities for a living. From £480.</p>
+        <p class="lede">Custom code, no templates, hosted on Cloudflare's global network and secured by someone who hunts vulnerabilities for sport. From <span data-usd="$650" data-gbp="£480" data-eur="€560">$650</span>.</p>
         <div class="hero-actions">
           <a class="button" href="#contact">Tell me about your project</a>
           <a class="link-arrow" href="#services">See services and pricing</a>
@@ -70,11 +71,16 @@
         <p class="section-number">01</p>
         <h2>Design &amp; build</h2>
         <p class="section-intro">Clear pricing, fixed scope, no surprises. Every site includes SSL, a web application firewall and DDoS protection.</p>
+        <div class="currency-toggle" role="group" aria-label="Currency">
+          <button type="button" data-currency="USD" aria-pressed="true">$ USD</button>
+          <button type="button" data-currency="GBP" aria-pressed="false">£ GBP</button>
+          <button type="button" data-currency="EUR" aria-pressed="false">€ EUR</button>
+        </div>
 
         <div class="tiers">
           <article class="tier">
             <h3>Starter site</h3>
-            <p class="price">£480</p>
+            <p class="price"><span data-usd="$650" data-gbp="£480" data-eur="€560">$650</span></p>
             <p class="tier-desc">One polished page to get your business online, fast.</p>
             <ul>
               <li>A single landing page designed around your brand</li>
@@ -89,7 +95,7 @@
           <article class="tier tier-featured">
             <p class="tier-tag">Most popular</p>
             <h3>Business site</h3>
-            <p class="price">£1,140</p>
+            <p class="price"><span data-usd="$1,550" data-gbp="£1,140" data-eur="€1,330">$1,550</span></p>
             <p class="tier-desc">A full home for your business: services, story and proof.</p>
             <ul>
               <li>Up to five pages, each written and designed from scratch</li>
@@ -127,7 +133,7 @@
         <div class="tiers">
           <article class="tier">
             <h3>Care Basic</h3>
-            <p class="price">£60<span class="period"> / month</span></p>
+            <p class="price"><span data-usd="$80" data-gbp="£60" data-eur="€70">$80</span><span class="period"> / month</span></p>
             <p class="tier-desc">A website that looks after itself.</p>
             <ul>
               <li>Fast hosting with SSL and a global CDN</li>
@@ -141,7 +147,7 @@
           <article class="tier tier-featured">
             <p class="tier-tag">Recommended</p>
             <h3>Care Growth</h3>
-            <p class="price">£120<span class="period"> / month</span></p>
+            <p class="price"><span data-usd="$160" data-gbp="£120" data-eur="€140">$160</span><span class="period"> / month</span></p>
             <p class="tier-desc">A site that gets better every month, not just stays up.</p>
             <ul>
               <li>Everything in Care Basic</li>
@@ -154,7 +160,7 @@
 
           <article class="tier">
             <h3>Care Premium</h3>
-            <p class="price">£480<span class="period"> / month</span></p>
+            <p class="price"><span data-usd="$650" data-gbp="£480" data-eur="€560">$650</span><span class="period"> / month</span></p>
             <p class="tier-desc">For businesses whose website is the business.</p>
             <ul>
               <li>Everything in Care Growth</li>
@@ -178,7 +184,7 @@
         <div class="work-grid">
           <article class="work-item">
             <h3><a href="https://github.com/angusgee/angusgee.dev">This site</a></h3>
-            <p>Plain HTML and CSS, no JavaScript, no build step. View the source. You're already looking at the portfolio piece.</p>
+            <p>Plain HTML and CSS with one tiny script, no framework, no build step. View the source. You're already looking at the portfolio piece.</p>
           </article>
           <article class="work-item">
             <h3><a href="https://shark3y.io">shark3y.io</a></h3>
