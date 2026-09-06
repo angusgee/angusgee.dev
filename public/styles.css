@@ -154,7 +154,7 @@ a { color: var(--accent); }
 
 @keyframes sheen {
   0% { transform: translateX(-160%) skewX(-20deg); }
-  33% { transform: translateX(320%) skewX(-20deg); }
+  50% { transform: translateX(320%) skewX(-20deg); }
   100% { transform: translateX(320%) skewX(-20deg); }
 }
 
@@ -174,7 +174,7 @@ a { color: var(--accent); }
   width: 45%;
   background: linear-gradient(105deg, transparent, rgba(255, 255, 255, 0.25), transparent);
   transform: translateX(-160%) skewX(-20deg);
-  animation: sheen 9s ease-in-out 2.5s infinite;
+  animation: sheen 6s ease-in-out 2.5s infinite;
   pointer-events: none;
 }
 
