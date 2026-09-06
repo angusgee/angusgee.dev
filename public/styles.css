@@ -486,8 +486,8 @@ a { color: var(--accent); }
   position: absolute;
   top: -0.8rem;
   left: 2rem;
-  background: var(--gold);
-  color: var(--navy);
+  background: var(--accent-deep);
+  color: #fbfaf6;
   font-size: 0.8125rem;
   font-weight: 600;
   padding: 0.2rem 0.75rem;
