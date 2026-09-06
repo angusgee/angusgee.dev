@@ -225,6 +225,12 @@ a { color: var(--accent); }
   margin-top: 2.5rem;
 }
 
+.cta-note {
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+  margin-top: 0.9rem;
+}
+
 /* Hero visual: duotone Gardjola photo with the proof card floating over it */
 
 .hero-visual {
@@ -309,6 +315,7 @@ a { color: var(--accent); }
 .hero h1 { animation: rise 0.6s ease-out both; }
 .hero .lede { animation: rise 0.6s ease-out 0.12s both; }
 .hero .hero-actions { animation: rise 0.6s ease-out 0.24s both; }
+.hero .cta-note { animation: rise 0.6s ease-out 0.3s both; }
 .hero-visual { animation: rise 0.6s ease-out 0.36s both; }
 .proof-bar-this { animation: grow 0.9s cubic-bezier(0.2, 0.7, 0.3, 1) 0.55s both; }
 .proof-bar-avg { animation: grow 0.9s cubic-bezier(0.2, 0.7, 0.3, 1) 0.65s both; }
@@ -574,14 +581,16 @@ a { color: var(--accent); }
 .footer-inner a {
   color: var(--navy-soft);
   text-decoration: none;
-  padding-bottom: 2px;
-  background: linear-gradient(var(--gold), var(--gold)) left bottom / 0% 1.5px no-repeat;
+  padding-bottom: 3px;
+  background:
+    linear-gradient(var(--gold), var(--gold)) left bottom / 0% 1.5px no-repeat,
+    linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)) left bottom / 100% 1px no-repeat;
   transition: background-size 0.25s ease, color 0.2s ease;
 }
 
 .footer-inner a:hover {
   color: var(--gold-bright);
-  background-size: 100% 1.5px;
+  background-size: 100% 1.5px, 100% 1px;
 }
 
 /* Contact questionnaire */
