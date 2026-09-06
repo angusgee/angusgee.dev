@@ -127,6 +127,8 @@ a { color: var(--accent); }
 
 .button {
   display: inline-block;
+  position: relative;
+  overflow: hidden;
   color: #fff;
   text-decoration: none;
   font-weight: 600;
@@ -136,7 +138,7 @@ a { color: var(--accent); }
   background: linear-gradient(110deg, var(--accent-deep) 0%, var(--accent-deep) 50%, var(--accent) 50%);
   background-size: 230% 100%;
   background-position: 100% 0;
-  transition: background-position 0.35s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  transition: background-position 0.35s ease, transform 0.25s ease-out, box-shadow 0.25s ease-out;
 }
 
 .button:hover {
@@ -150,7 +152,7 @@ a { color: var(--accent); }
   box-shadow: 0 0 0 var(--navy);
 }
 
-/* periodic sheen on the two primary conversion buttons only */
+/* sheen: idle loop on the two primary conversion buttons, one pass on hover everywhere else */
 
 @keyframes sheen {
   0% { transform: translateX(-160%) skewX(-20deg); }
@@ -158,14 +160,12 @@ a { color: var(--accent); }
   100% { transform: translateX(320%) skewX(-20deg); }
 }
 
-.hero-actions .button,
-.contact .button {
-  position: relative;
-  overflow: hidden;
+@keyframes sheen-once {
+  from { transform: translateX(-160%) skewX(-20deg); }
+  to { transform: translateX(320%) skewX(-20deg); }
 }
 
-.hero-actions .button::after,
-.contact .button::after {
+.button::after {
   content: "";
   position: absolute;
   top: 0;
@@ -174,8 +174,16 @@ a { color: var(--accent); }
   width: 45%;
   background: linear-gradient(105deg, transparent, rgba(255, 255, 255, 0.25), transparent);
   transform: translateX(-160%) skewX(-20deg);
-  animation: sheen 6s ease-in-out 2.5s infinite;
   pointer-events: none;
+}
+
+.button:hover::after {
+  animation: sheen-once 1.4s ease-in-out;
+}
+
+.hero-actions .button::after,
+.contact .button::after {
+  animation: sheen 6s ease-in-out 2.5s infinite;
 }
 
 .button-small {
@@ -192,7 +200,7 @@ a { color: var(--accent); }
   background: transparent;
   color: var(--accent);
   box-shadow: inset 0 0 0 1.5px var(--accent);
-  transition: background-color 0.25s ease, color 0.25s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease-out, box-shadow 0.25s ease-out;
 }
 
 .button-outline:hover {
