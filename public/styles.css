@@ -208,6 +208,8 @@ a { color: var(--accent); }
   letter-spacing: -0.02em;
 }
 
+.hero-w { color: var(--accent); }
+
 .lede {
   font-size: clamp(1.125rem, 2.5vw, 1.3125rem);
   color: var(--ink-soft);
