@@ -313,9 +313,20 @@ a { color: var(--accent); }
 
 /* Value props */
 
-.props {
-  border-bottom: 1px solid var(--rule);
+.props.section-dark { border-bottom: 0; }
+
+.props.section-dark .prop h3 { color: #fbfaf6; }
+
+.props.section-dark .prop h3::before {
+  content: "";
+  display: block;
+  width: 2.25rem;
+  height: 2px;
+  background: var(--gold);
+  margin-bottom: 0.9rem;
 }
+
+.props.section-dark .prop p { color: var(--navy-soft); }
 
 .props-grid {
   display: grid;
