@@ -1,5 +1,5 @@
-// Currency localisation: default USD; Cloudflare's /cdn-cgi/trace supplies the
-// visitor's country, and a manual toggle (persisted locally) overrides it.
+// currency localisation
+// Cloudflare's /cdn-cgi/trace supplies the country and a persisted manual toggle beats it
 (function () {
   var EU = ["AT", "BE", "BG", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GR", "HR", "HU", "IE", "IT", "LT", "LU", "LV", "MT", "NL", "PL", "PT", "RO", "SE", "SI", "SK"];
   var KEY = "currency";

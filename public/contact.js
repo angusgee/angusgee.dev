@@ -1,4 +1,5 @@
-// Intake questionnaire: step engine, branching, validation and submission.
+// intake questionnaire
+// step engine plus branching, validation and submission
 (function () {
   var form = document.getElementById("brief");
   if (!form) return;
@@ -130,7 +131,7 @@
       });
   });
 
-  // Preselect from ?plan= links on the pricing tiers.
+  // preselect from ?plan= links on the pricing tiers
   var plan = new URLSearchParams(window.location.search).get("plan");
   var planMap = {
     "starter": "new-site",

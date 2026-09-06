@@ -1,5 +1,5 @@
-// Contact form API. Static assets are served by the assets binding; only
-// /api/* reaches this code (run_worker_first in wrangler.jsonc).
+// contact form API
+// only /api/* reaches this worker and the assets binding serves everything else
 
 const MAX_BODY_BYTES = 10000;
 const LONG_FIELDS = new Set(["details", "about", "notes"]);
@@ -12,7 +12,8 @@ const PROJECT_TYPES = {
   "not-sure": "Not sure yet",
 };
 
-// Order and labels for the email body. Unanswered fields are skipped.
+// order and labels for the email body
+// unanswered fields are skipped
 const EMAIL_LINES = [
   ["projectType", "Project type", (v) => PROJECT_TYPES[v]],
   ["siteSize", "Site size"],
@@ -78,7 +79,7 @@ async function handleContact(request, env) {
     return json({ ok: false, error: "bad_json" }, 400);
   }
 
-  // Honeypot: bots that fill the hidden field get a quiet "success".
+  // bots that fill the honeypot field get a quiet success
   if (body.website) {
     return json({ ok: true });
   }
